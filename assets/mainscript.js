@@ -50,6 +50,10 @@ loginBtn.addEventListener("click", function () {
         // console.log(withdrawAmount)
         // turning into number
         // const withdrawNumber = parseFloat(withdrawAmount);
+
+        updateSpanText("currentWithdraw", withdrawNumber);
+        updateSpanText("currentBalance", -1 * withdrawNumber);
+        document.getElementById("withdrawAmount").value = "";
     })
 
 
